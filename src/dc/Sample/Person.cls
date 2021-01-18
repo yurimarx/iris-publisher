@@ -19,6 +19,29 @@ ClassMethod AddTestData(amount As %Integer = 10)
     d ..Populate(amount)
 }
 
+XData LoadData
+{
+<table>
+ <row>1^Minor</row>
+ <row>2^Moderate</row>
+ <row>3^Life-threatening</row>
+ <row>9^Inactive</row>
+ <row>99^Unable to determine</row>
+</table>
+}
+
+/// Documentation for Person in HTML
+XData PersonDocHtml [ MimeType = text/html ]
+{
+<h1>This is the Person class</h1>
+}
+
+/// Documentation for Person in Markdown
+XData PersonDocMarkdown [ MimeType = text/markdown ]
+{
+<h1>This is the Person class in MD</h1>
+}
+
 Storage Default
 {
 <Data name="PersonDefaultData">
