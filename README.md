@@ -41,7 +41,7 @@ From IRIS Terminal run:
 ```
 
 The IRIS Publisher it will serve your documentation in: http://localhost:8000
-If you want download the static version, download the folder: /mkdocs/iris-publisher/site
+If you want download the static version, download the folder from your docker instance: /mkdocs/iris-publisher/site
 
 ## How to start coding
 This repository is ready to code in VSCode with ObjectScript plugin.

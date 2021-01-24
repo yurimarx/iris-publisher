@@ -14,7 +14,7 @@ RUN mkdir /mkdocs
 WORKDIR /mkdocs
 RUN mkdocs new iris-publisher
 WORKDIR /mkdocs/iris-publisher
-COPY  mkdocs.yml mkdocs.yml
+COPY  docs docs
 RUN chmod 777 -R /mkdocs/iris-publisher
 
 WORKDIR /opt/irisapp

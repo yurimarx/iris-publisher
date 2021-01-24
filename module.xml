@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="multi-model-api-template.ZPM">
+  <Document name="iris-publisher.ZPM">
     <Module>
-      <Name>multi-model-api-template</Name>
+      <Name>iris-publisher</Name>
       <Version>1.0.0</Version>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-      <Resource Name="dc.Sample.PKG"/>
+      <Resource Name="dc.PKG"/>
       <Dependencies>
         <ModuleReference>
           <Name>swagger-ui</Name>
