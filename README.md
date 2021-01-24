@@ -40,7 +40,26 @@ From IRIS Terminal run:
 ##class("dc.mkdocs.Generator").Generate()
 ```
 
-The IRIS Publisher it will serve your documentation in: http://localhost:8000
+From API:
+
+1. Execute http://localhost:52773/swagger-ui/index.html?url=http://localhost:52773/api/mgmnt/v1/USER/spec/crud#/default/UpdateDocConfig with this sample body to config your documentation parameters:
+
+```
+{
+"SiteName":"Publisher",
+"Summary":"Documentation of the Publisher",
+"Description":"This an Application to generate documentation from XDATA",
+"DeveloperName":"Yuri Gomes",
+"DeveloperEmail": "yurimarx@gmail.com",
+"DeveloperWebsite": "ymservices.tech"
+}
+
+```
+2. Execute http://localhost:52773/swagger-ui/index.html?url=http://localhost:52773/api/mgmnt/v1/USER/spec/crud#/default/InitiatePublisher to generate documentation and up the documentation server 
+
+
+3. The IRIS Publisher it will serve your documentation in: http://localhost:8000
+
 If you want download the static version, download the folder from your docker instance: /mkdocs/iris-publisher/site
 
 ## How to start coding
