@@ -34,13 +34,7 @@ XData PersonDocMarkdown [ MimeType = text/markdown ]
 <h1>This is the Person class in MD</h1>
 }
 ```
-From IRIS Terminal run: 
-
-```
-##class("dc.mkdocs.Generator").Generate()
-```
-
-From API:
+To Generate the Documentation and execute the Documentation Server From API:
 
 1. Execute http://localhost:52773/swagger-ui/index.html?url=http://localhost:52773/api/mgmnt/v1/USER/spec/crud#/default/UpdateDocConfig with this sample body to config your documentation parameters:
 
@@ -61,6 +55,12 @@ From API:
 3. The IRIS Publisher it will serve your documentation in: http://localhost:8000
 
 If you want download the static version, download the folder from your docker instance: /mkdocs/iris-publisher/site
+
+To Generate the Documentation and Up Documentation Server From IRIS Terminal run: 
+
+```
+##class("dc.mkdocs.Generator").Generate()
+```
 
 ## How to start coding
 This repository is ready to code in VSCode with ObjectScript plugin.
