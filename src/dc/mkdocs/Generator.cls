@@ -24,6 +24,8 @@ ClassMethod Generate()
     If '$IsObject(docconfig) {
         Do file.Write("    - 'Overview': 'index.md'")   
     } Else {
+        Do file.Write("    - 'index.md'")
+        Do file.WriteLine()
         Do file.Write("    - 'Overview': 'dynaindex.md'")
     }
     
