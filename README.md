@@ -68,7 +68,7 @@ To Generate the Documentation and Up Documentation Server From IRIS Terminal run
 ## Change the Theme:
 
 ### Current themes
-<img src="https://github.com/yurimarx/iris-publisher/raw/master/themes.gif" alt="IRIS Publisher themes">
+<img src="https://github.com/yurimarx/iris-publisher/raw/master/themes.png" alt="IRIS Publisher themes">
 
 The first theme is the default, to set last theme update the config setting Theme to readthedocs, see:
 
