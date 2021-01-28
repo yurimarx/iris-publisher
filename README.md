@@ -72,7 +72,7 @@ To Generate the Documentation and Up Documentation Server From IRIS Terminal run
 
 The first theme is the default, to set last theme update the config setting Theme to readthedocs, see:
 
-´´´
+```
 {
 "SiteName":"Publisher",
 "Summary":"Documentation of the Publisher",
@@ -83,7 +83,7 @@ The first theme is the default, to set last theme update the config setting Them
 "Theme": "readthedocs"
 }
 
-´´´
+```
 
 ## How to start coding
 This repository is ready to code in VSCode with ObjectScript plugin.
