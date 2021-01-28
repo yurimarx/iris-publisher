@@ -65,6 +65,26 @@ To Generate the Documentation and Up Documentation Server From IRIS Terminal run
 ##class("dc.mkdocs.Generator").Generate()
 ```
 
+## Change the Theme:
+
+### Current themes
+<img src="https://github.com/yurimarx/iris-publisher/raw/master/themes.gif" alt="IRIS Publisher themes">
+
+The first theme is the default, to set last theme update the config setting Theme to readthedocs, see:
+
+´´´
+{
+"SiteName":"Publisher",
+"Summary":"Documentation of the Publisher",
+"Description":"This an Application to generate documentation from XDATA",
+"DeveloperName":"Yuri Gomes",
+"DeveloperEmail": "yurimarx@gmail.com",
+"DeveloperWebsite": "ymservices.tech",
+"Theme": "readthedocs"
+}
+
+´´´
+
 ## How to start coding
 This repository is ready to code in VSCode with ObjectScript plugin.
 Install [VSCode](https://code.visualstudio.com/) and [ObjectScript](https://marketplace.visualstudio.com/items?itemName=daimor.vscode-objectscript) plugin and open the folder in VSCode.
