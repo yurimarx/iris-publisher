@@ -4,11 +4,13 @@ FROM $IMAGE
 
 USER root   
 
-RUN apt-get update && apt-get install -y mkdocs locales && rm -rf /var/lib/apt/lists/* \
+RUN apt-get update && apt-get install -y mkdocs locales python-pip && rm -rf /var/lib/apt/lists/* \
  && locale-gen "en_US.UTF-8"
 ENV LANG=en_US.UTF-8 \
     LANGUAGE=en_US:en \
     LC_ALL=en_US.UTF-8
+
+RUN pip install mkdocs-gitbook
 
 RUN mkdir /mkdocs
 WORKDIR /mkdocs

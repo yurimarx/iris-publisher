@@ -24,6 +24,9 @@ ClassMethod Generate()
     If '$IsObject(docconfig) {
         Do file.Write("    - 'Overview': 'index.md'")   
     } Else {
+        Do file.WriteLine()
+        Do file.Write("    - 'Index': 'index.md'")
+        Do file.WriteLine()
         Do file.Write("    - 'Overview': 'dynaindex.md'")
     }
     
@@ -48,7 +51,15 @@ ClassMethod Generate()
         Do file.Write("    - 'About': 'dynaabout.md'")
     }
 
+    If $IsObject(docconfig) {
+        If (docconfig.Theme = "readthedocs") {
+            Do file.WriteLine()
+            Do file.Write("theme: readthedocs")
+        }
+    }
     Do file.WriteLine()
+    //Do file.Write(" name: gitbook")
+    //Do file.WriteLine()
     Do file.Write("dev_addr: '0.0.0.0:8000'")   
     Do file.%Save()
 
@@ -83,7 +94,7 @@ ClassMethod Generate()
     }
     
     Do ##class(%SYSTEM.Process).CurrentDirectory("/mkdocs/iris-publisher/")
-    Set status = $ZF(-100,"/SHELL", "mkdocs","build")
+    Set status = $ZF(-100,"/SHELL", "mkdocs","build", "--clean")
     Set status = $ZF(-100,"/SHELL", "mkdocs","serve")
     Write status
         

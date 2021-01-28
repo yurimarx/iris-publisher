@@ -43,6 +43,7 @@ ClassMethod GetDocConfig() As %Status
     set json.DeveloperName=$lg(record,5)
     set json.DeveloperEmail=$lg(record,6)
     set json.DeveloperWebsite=$lg(record,7)
+    set json.Theme=$lg(record,8)
     write json.%ToJSON()
     return sc
 }

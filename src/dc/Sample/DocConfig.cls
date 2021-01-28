@@ -13,6 +13,8 @@ Property DeveloperEmail As %String;
 
 Property DeveloperWebsite As %String;
 
+Property Theme As %String;
+
 /// Documentation for DocConfig in HTML
 XData DocConfig [ MimeType = text/html ]
 {
@@ -42,6 +44,9 @@ Storage Default
 </Value>
 <Value name="7">
 <Value>DeveloperWebsite</Value>
+</Value>
+<Value name="8">
+<Value>Theme</Value>
 </Value>
 </Data>
 <DataLocation>^dc.Sample.DocConfigD</DataLocation>
