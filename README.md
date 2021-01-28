@@ -1,6 +1,9 @@
 ## IRIS Publisher
 This is an application to generate your online dynamic or offine static application documentation. You create XData to your classes with "text/html" or "text/markdown" mime type and the IRIS Publisher will collect all XData and create your documentation site using MkDocs. 
 
+## IRIS Publisher in action:
+<img src="https://github.com/yurimarx/iris-publisher/raw/master/IRISPublisher.gif" alt="IRIS Publisher in action">
+
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 
