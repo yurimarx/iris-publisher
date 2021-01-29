@@ -1,19 +1,25 @@
 Class dc.Sample.Person Extends (%Persistent, %JSON.Adaptor, %Populate)
 {
 
+/// Person first and last name
 Property Name As %VarString;
 
+/// Title for person
 Property Title As %String;
 
+/// Person's company name
 Property Company As %String;
 
+/// Person's phone
 Property Phone As %VarString;
 
+/// Person's date of birth
 Property DOB As %Date(MAXVAL = "$piece($horolog, "","", 1)");
 
 /// Index for property DOB
 Index DOBIndex On DOB;
 
+/// Add person data to test up to the amount parameter 
 ClassMethod AddTestData(amount As %Integer = 10)
 {
     d ..Populate(amount)
@@ -31,15 +37,9 @@ XData LoadData
 }
 
 /// Documentation for Person in HTML
-XData PersonDocHtml [ MimeType = text/html ]
+XData PersonDocHtml [ MimeType = text/markdown ]
 {
-<h1>This is the Person class</h1>
-}
-
-/// Documentation for Person in Markdown
-XData PersonDocMarkdown [ MimeType = text/markdown ]
-{
-<h1>This is the Person class in MD</h1>
+<h5>This is the Person class</h5>
 }
 
 Storage Default

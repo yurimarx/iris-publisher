@@ -1,24 +1,31 @@
 Class dc.Sample.DocConfig Extends (%Persistent, %JSON.Adaptor)
 {
 
+/// Documentation site name. 
 Property SiteName As %String;
 
+/// Summary about the application
 Property Summary As %String;
 
+/// Application description
 Property Description As %String(MAXLEN = 1000);
 
+/// Developer's full name
 Property DeveloperName As %String;
 
+/// Developer's email
 Property DeveloperEmail As %String;
 
+/// Developer's site name E.g: wwww.intersystems.com
 Property DeveloperWebsite As %String;
 
+/// MkDocs Theme. Options: default or readthedocs
 Property Theme As %String;
 
 /// Documentation for DocConfig in HTML
 XData DocConfig [ MimeType = text/html ]
 {
-<h1>This is the DocConfig class</h1>
+<b>This is the DocConfig class. This class is used to hold general parameters to documentation generation</b>
 }
 
 Storage Default
